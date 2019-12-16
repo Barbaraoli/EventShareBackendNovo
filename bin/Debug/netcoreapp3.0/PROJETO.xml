@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PROJETO</name>
+    </assembly>
+    <members>
+        <member name="M:EventShareBackend_master.Controllers.CategoriaController.Get">
+            <summary>
+            Método lista todas as categorias de evento existentes
+            </summary>
+            <returns>Retorna a lista de categorias</returns>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.CategoriaController.Post(PROJETO.Models.EventoCategoriaTbl)">
+            <summary>
+            Método para criar uma nova categoria, acesso restrito ao administrador
+            </summary>
+            <returns>Retorna categoria criada</returns>
+            <param name="categoria"></param>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.CategoriaController.Put(System.Int32,PROJETO.Models.EventoCategoriaTbl)">
+            <summary>
+            Método para atualizar uma categoria existente, acesso restrito ao administrador
+            </summary>
+            <returns>Retorna categoria atualizada</returns
+            >
+            <param name="id"></param>
+            <param name="categoria"></param>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.CategoriaController.Delete(System.Int32)">
+            <summary>
+            Método para deletar uma categoria existente, acesso restrito ao administrador
+            </summary>
+            <returns>Retorna categoria deletada</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.EspacoController.Get">
+            <summary>
+            Método para listar os espaços e eventos
+            </summary>
+            <returns>Retorna lista de espaços</returns>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.EspacoController.Get(System.Int32)">
+            <summary>
+            Método para chamar o espaço de eventos pelo ID
+            </summary>
+            <returns>Retorna o evento</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.StatusController.Get">
+            <summary>
+            Método para listar os status existentes
+            </summary>
+            <returns>Retorna lista de status</returns>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.UsuarioTipoController.Get">
+            <summary>
+            Método para listar os tipos de usuário
+            </summary>
+            <returns>Retorna lista de tipos usuarios</returns>
+        </member>
+        <member name="M:EventShareBackend_master.Controllers.UsuarioTipoController.Get(System.Int32)">
+             <summary>
+             Método para buscar o tipo de usuário pelo ID
+             </summary>
+             <returns>Retorna o tipo de usuário</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.Get">
+            <summary>
+            Método para listar todos os eventos existentes
+            </summary>
+            <returns>Retorna lista de eventos</returns>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.Get(System.String)">
+            <summary>
+            Método para buscar evento pelo nome
+            </summary>
+            <returns>Retorna o evento</returns>
+            <param name="nomeEvento"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.GetKey(System.String)">
+            <summary>
+            Método para listar eventos por uma palavra chave
+            </summary>
+            <returns>Retorna a lista de eventos</returns>
+            <param name="nome"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.BuscarPorCategoria(System.Int32)">
+            <summary>
+            Método para filtrar os eventos de acordo com sua categoria
+            </summary>
+            <returns>Retorna a lista de eventos</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.BuscarPorId(System.Int32)">
+            <summary>
+            Esse método retorna um evento de acordo com seu ID
+            </summary>
+            <returns>Objeto evento</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.VerificaEspaco(System.DateTime)">
+            <summary>
+            Método para listar os espaços vazios de acordo com a data
+            </summary>
+            <returns>Retorna uma lista de espaços livres na data digitada como parâmetro</returns>
+            <param name="data"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.BuscarPorData(System.DateTime)">
+            <summary>
+            Método para listar os eventos de acordo com a data 
+            </summary>
+            <returns>Retorna a lista de eventos com a data encontrada</returns>
+            <param name="data"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.GetStatus(System.String)">
+            <summary>
+            Método para filtrar eventos pelo status, restrito somente ao administrador
+            </summary>
+            <returns>Retorna a lista de eventos</returns>
+            <param name="status"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.Post(PROJETO.Models.EventoTbl)">
+            <summary>
+            Método para cadastrar um novo evento
+            </summary>
+            <returns>Retorna o evento criado</returns>
+            <param name="evento"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.Put(System.Int32,PROJETO.Models.EventoTbl)">
+            <summary>
+            Método para atualizar informaçoes de um evento previamente cadastrado
+            </summary>
+            <returns>Retorna o evento relacionado ao ID</returns>
+            <param name="id"></param>
+            <param name="evento"></param>
+        </member>
+        <member name="M:PROJETO.Controllers.EventoTblController.Delete(System.Int32)">
+            <summary>
+            Método para deletar um evento existente
+            </summary>
+            <returns>Retorna o evento deletado</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:EventShareBackend.Controllers.LoginController.Login(PROJETO.Models.UsuarioTbl)">
+            <summary>
+            Método para realizar o login
+            </summary>
+            <returns>Retorna token</returns>
+            <param name="login"></param>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.Get">
+            <summary>
+            Método para listar os usuário cadastrados
+            </summary>
+            <returns>Retorna lista de usuarios</returns>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.Get(System.Int32)">
+            <summary>
+            Método para buscar um usuario pelo ID
+            </summary>
+            <returns>Retorna o usuário</returns>
+            <param name="id"></param>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.PegarUsuario">
+            <summary>
+            Esse método tem o objetivo de pegar as informações do usuário logado.
+            </summary>
+            <returns>Retorna o usuário</returns>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.Post(PROJETO.Models.UsuarioTbl)">
+            <summary>
+            Método para criar um usuario
+            </summary>
+            <returns>Retorna o usuario cadastrado</returns>
+            <param name="usuario"></param>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.Put(System.Int32,PROJETO.Models.UsuarioTbl)">
+            <summary>
+            Método para atualizar dados de um usuário cadastrado
+            </summary>
+            <returns>Retorna o usuario</returns>
+            <param name="id"></param>
+            <param name="usuario"></param>
+        </member>
+        <member name="M:EventShareBackEnd.Controllers.UsuarioTblController.Delete(System.Int32)">
+             <summary>
+             Método para deletar um usuário cadastrado
+             </summary>
+             <returns>Retorna o usuario deletado</returns>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>
