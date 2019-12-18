@@ -6526,11 +6526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fic\\Desktop\\React - EventShare\\EventShareBackend\\PROJETO.csproj",
+      "projectUniqueName": "C:\\Users\\fic\\Desktop\\eventoficial\\EventShareBackendNovo\\PROJETO.csproj",
       "projectName": "PROJETO",
-      "projectPath": "C:\\Users\\fic\\Desktop\\React - EventShare\\EventShareBackend\\PROJETO.csproj",
+      "projectPath": "C:\\Users\\fic\\Desktop\\eventoficial\\EventShareBackendNovo\\PROJETO.csproj",
       "packagesPath": "C:\\Users\\fic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fic\\Desktop\\React - EventShare\\EventShareBackend\\obj\\",
+      "outputPath": "C:\\Users\\fic\\Desktop\\eventoficial\\EventShareBackendNovo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
