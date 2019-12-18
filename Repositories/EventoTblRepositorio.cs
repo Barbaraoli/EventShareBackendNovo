@@ -80,6 +80,8 @@ namespace PROJETO.Repositories
         public async Task<EventoTbl> Put(EventoTbl evento){
             EventoTbl eventoEncontrado = await context.EventoTbl.FindAsync(evento.EventoId);
             
+            eventoEncontrado.EventoNome = evento.EventoNome;
+            eventoEncontrado.EventoStatusId = evento.EventoStatusId;
             eventoEncontrado.EventoHorarioComeco = evento.EventoHorarioComeco;
             eventoEncontrado.EventoHorarioFim = evento.EventoHorarioFim;
             eventoEncontrado.EventoData = evento.EventoData;
